@@ -15,3 +15,4 @@ coverage/
 .npm/
 logs/
 .mcp.json
+*.tgz

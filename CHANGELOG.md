@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- New features not yet released
+- GitHub Actions workflows for Claude Code Review and Claude PR Assistant
 
 ### Changed
 - Updates to existing functionality
@@ -27,17 +27,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.0.0] - YYYY-MM-DD
+## [0.1.0] - 2025-07-25
 
 ### Added
-- Initial release
-- Feature list here
+- Initial release of Shelly MCP Server
+- Model Context Protocol (MCP) server implementation for controlling Shelly smart home devices
+- Support for Shelly Cloud API integration with EU and US regions
+- Tool: `list_devices` - List all connected Shelly devices with online/offline status
+- Tool: `control_light` - Control lights with on/off and brightness settings
+- Tool: `control_switch` - Control relay/switch devices
+- Tool: `get_temperature` - Read temperature from compatible sensors
+- Tool: `get_device_status` - Get comprehensive device status including:
+  - Network information (WiFi/Ethernet)
+  - System uptime and RAM usage
+  - Power consumption monitoring
+  - Multi-channel component status
+  - Battery level for battery-powered devices
+  - Humidity readings where available
+- Winston-based file logging to `~/.shelly-mcp/logs/`
+- Rate limiting to respect Shelly API constraints (1 req/sec)
+- Device list caching with 60-second TTL
+- TypeScript with strict mode and ESM modules
+- Comprehensive error handling with custom error codes
+- Input validation using Zod schemas
+- Full test suite with Vitest
+- ESLint and Prettier configuration for code quality
+- Detailed documentation including setup guides and API reference
 
-### Changed
-- What was modified
-
-### Fixed
-- What was repaired
+### Security
+- API key provided only via command-line arguments (never stored in files)
+- Sensitive information masked in logs
+- All external API calls use HTTPS
 
 ---
 

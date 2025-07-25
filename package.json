@@ -26,16 +26,16 @@
     "ai",
     "home-automation"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Milko Slavov <milko.slavov@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/shelly-mcp.git"
+    "url": "git+https://github.com/mslavov/shelly-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/shelly-mcp/issues"
+    "url": "https://github.com/mslavov/shelly-mcp/issues"
   },
-  "homepage": "https://github.com/yourusername/shelly-mcp#readme",
+  "homepage": "https://github.com/mslavov/shelly-mcp#readme",
   "files": [
     "build/",
     "README.md",
