@@ -1,0 +1,17 @@
+scratch/
+node_modules/
+build/
+dist/
+*.log
+.env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+coverage/
+*.tmp
+*.swp
+*.swo
+.npm/
+logs/
+.mcp.json
